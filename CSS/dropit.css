@@ -1,0 +1,81 @@
+/*
+ * Dropit v1.1.0
+ * http://dev7studios.com/dropit
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* These styles assume you are using ul and li */
+.dropit {
+    list-style: none;
+  	padding: 0;
+    margin: 15px 0 0;
+    float:right;
+    display:inline-block;
+    background-color: #f4310e;
+    border-radius: 4px;
+
+}
+.dropit a {
+  text-decoration: none;
+  padding: 5px 35px;
+  color: white;
+}
+.dropit:active {
+  background-color: #114944;
+}
+.dropit .dropit-trigger {
+  position: relative;
+}
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    list-style: none;
+  	margin: 20px 0 0;
+}
+.dropit .dropit-open .dropit-submenu {
+    display: block;
+    background: white;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+    padding: 0; /* erases padding if there is any inherited || double check this 8/6/2017 */
+  }
+.dropit .dropit-open .dropit-submenu:after {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px;
+    right: 10px;
+   }
+.dropit .dropit-open .dropit-submenu li {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 5px 10px 20px 10px;
+   }
+.dropit .dropit-open .dropit-submenu li:last-child {
+    margin-bottom: 0px;
+   }
+.dropit .dropit-open .dropit-submenu li a {
+    color:#34495E;
+    text-decoration: none;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight:100;
+    float: left
+    padding: 0px;
+   }
+   .dropit .dropit-open .dropit-submenu li a i{
+     float: left;
+     position: relative;
+     top: 5px;
+   }

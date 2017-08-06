@@ -1,5 +1,4 @@
 html, body{
-  overflow-x: hidden;
   margin: 0px;
   padding: 0px;
 }
@@ -97,7 +96,7 @@ p {
    margin:0 15px;
  }
  header nav ul > li.btn-outline {
-   padding:10px 15px;
+
    border:2px solid #FFFFFF;
    border-radius: 4px;
  }
@@ -174,18 +173,17 @@ p {
     }
   }
 
-  /* BUTTONS */
+  /* BUTTONS
    .btn {
      border-radius: 4px;
      color:white;
      font-weight: 400;
      text-decoration: none;
-     padding:10px 30px;
      background: #ff4014;
      border: 1px solid black;
      box-shadow: 0px 0px 3px 2px #3f3f3f;
    }
-
+*/
    /* BENEFITS */
 .benefits {
   text-align: center;
@@ -400,7 +398,6 @@ p {
 /* DASHBOARD */
 .dashboard {
   background:#dbdbdb;
-    overflow-x: hidden;
 }
 .left-nav {
   margin: 0 auto;
@@ -525,25 +522,23 @@ p {
    float: left;
    display:inline-block;
  }
- .content .header > div {
-   float:right;
-   position: relative;
-   right: 100px;
-   text-align: center;
-   box-shadow: 0px 2px 8px 1.5px #888888;
- }
- .content .header > div a {
-   text-decoration: none;
-   color: white;
-   position: relative;
-   top: 2px;
-   padding: 4px 55px;
-   background: #ff4014;
- }
- .content .header > div a:active {
-     background-color: #114944;
- }
- .content-item {
+.content .header > a {
+  float: right;
+}
+                              /* .content .header > ul {
+                                float:right;
+                                position: relative;
+                                text-align: center;
+                                box-shadow: 0px 2px 8px 1.5px #888888;
+                                border-radius: 4px;
+                              }
+                              .content .header ul li a {
+                                text-decoration: none;
+                                color: white;
+                                position: relative;
+                              } */
+
+.content-item {
     display: inline;
    	width: 23.7%;
    	height: 250px;
